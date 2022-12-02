@@ -3,8 +3,11 @@
 //456 -> 5
 //782 -> 8
 //918 -> 1
-
-Console.Write("Введите трехзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-number = number % 100;
-Console.WriteLine($"Вторая цифра введённого вами числа - {number / 10}");
+void secondNumber(int arg)
+{
+    Console.Write("Введите трехзначное число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    number = number % 100;
+    Console.WriteLine($"Вторая цифра введённого вами числа - {number / 10}");
+}
+secondNumber(1);

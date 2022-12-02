@@ -4,14 +4,16 @@
 //7 -> да
 //1 -> нет
 
-
-Console.Write("Введите число искомого дня недели: ");
-int number = Convert.ToInt32(Console.ReadLine());
-if (number == 7 || number == 6)
-{
-    Console.WriteLine("ДА");
+void weekends(int arg) {
+    Console.Write("Введите число искомого дня недели: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (number == 7 || number == 6)
+    {
+        Console.WriteLine("ДА");
+    }
+    else
+    {
+        Console.WriteLine("НЕТ");
+    }
 }
-else
-{
-    Console.WriteLine("НЕТ");
-}
+weekends(1);

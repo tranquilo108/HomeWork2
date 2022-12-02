@@ -5,12 +5,16 @@
 //78 -> третьей цифры нет
 
 //32679 -> 6
-Console.Write("Введите трёхзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-if (Math.Abs(number) < 100)
-    Console.WriteLine("Третьей цифры нет!");
-else
+void thirdNumber(int arg)
 {
-    string x = Convert.ToString(number);
-    Console.WriteLine("Третья цифра вашего числа: " + x[2]);
+    Console.Write("Введите трёхзначное число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (Math.Abs(number) < 100)
+        Console.WriteLine("Третьей цифры нет!");
+    else
+    {
+        string x = Convert.ToString(number);
+        Console.WriteLine("Третья цифра вашего числа: " + x[2]);
+    }
 }
+thirdNumber(1);
