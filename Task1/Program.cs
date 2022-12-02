@@ -4,7 +4,7 @@
 //782 -> 8
 //918 -> 1
 
-Console.WriteLine("Введите трехзначное число");
+Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 number = number % 100;
 Console.WriteLine($"Вторая цифра введённого вами числа - {number / 10}");
