@@ -5,16 +5,13 @@
 //1 -> нет
 
 
-static void Main(string[] args)
+Console.Write("Введите число искомого дня недели: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number == 7 || number == 6)
 {
-    Console.Write("Введите число искомого дня недели: ");
-    int number = Convert.ToInt32(Console.ReadLine());
-    if (number == 7 || number == 6)
-    {
-        Console.WriteLine("ДА");
-    }
-    else
-    {
-        Console.WriteLine("НЕТ");
-    }
+    Console.WriteLine("ДА");
+}
+else
+{
+    Console.WriteLine("НЕТ");
 }
