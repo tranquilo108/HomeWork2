@@ -5,7 +5,7 @@
 //78 -> третьей цифры нет
 
 //32679 -> 6
-void thirdNumber(int arg)
+void thirdNumber()
 {
     Console.Write("Введите трёхзначное число: ");
     int number = Convert.ToInt32(Console.ReadLine());
@@ -17,4 +17,4 @@ void thirdNumber(int arg)
         Console.WriteLine("Третья цифра вашего числа: " + x[2]);
     }
 }
-thirdNumber(1);
+thirdNumber();

@@ -4,7 +4,8 @@
 //7 -> да
 //1 -> нет
 
-void weekends(int arg) {
+void weekends() 
+{
     Console.Write("Введите число искомого дня недели: ");
     int number = Convert.ToInt32(Console.ReadLine());
     if (number == 7 || number == 6)
@@ -16,4 +17,4 @@ void weekends(int arg) {
         Console.WriteLine("НЕТ");
     }
 }
-weekends(1);
+weekends();
